@@ -1,25 +1,38 @@
-namespace ProjetoDeRedes
+namespace RedeNeural.DataTransferObjects
 {
     internal class FutebolDTO
     {
+
+        public int Id { get; set; }
+        
         public string? FTR { get; set; } // Full Time Result -> Determina as classes H A D
 
-        public string? HTHG { get; set; } // Half Time Home Team Goal -> Gols do time da casa no primeiro tempo
+        // public double HTHG { get; set; }
 
-        public string? HTAG { get; set; } // Half Time Away Team Goal -> Gols do time visitante no primeiro tempo
+        // public double HTAG { get; set; }
 
-        public string? HTR { get; set; } // Half Time Result -> Resultado do primeiro tempo
+        public double HS { get; set; } // Home Teams Shots -> Chutes do time da casa
 
-        public string? HS { get; set; } // Home Teams Shots -> Chutes do time da casa
+        public double AS { get; set; } // Away Teams Shots -> Chutes do time visitante
 
-        public string? AS { get; set; } // Away Teams Shots -> Chutes do time visitante
+        public double HST { get; set; } //Home Teams Shots on Target -> Chutes ao gol do time da casa
 
-        public string? HST { get; set; } //Home Teams Shots on Target -> Chutes ao gol do time da casa
+        public double AST { get; set; } //Away Teams Shots on Target -> Chutes ao gol do time visitante
 
-        public string? AST { get; set; } //Away Teams Shots on Target -> Chutes ao gol do time visitante
+        public double HC { get; set; } // Home Team Corners -> Escanteios do time da casa
 
-        public string? HC { get; set; } // Home Team Corners -> Escanteios do time da casa
+        public double AC { get; set; } // Away Team Corners -> Escanteios do time visitante   
 
-        public string? AC { get; set; } // Away Team Corners -> Escanteios do time visitante    
+        public double HF { get; set; } // Away Team Corners -> Escanteios do time visitante   
+
+        public double AF { get; set; } // Away Team Corners -> Escanteios do time visitante   
+
+        public double HY { get; set; } // Away Team Corners -> Escanteios do time visitante   
+
+        public double AY { get; set; } // Away Team Corners -> Escanteios do time visitante   
+
     }
+
 }
+
+
